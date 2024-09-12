@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Frames Example</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .frame1 {
+            width: 30%;
+            border-right: 2px solid #ddd;
+        }
+        .frame2 {
+            width: 70%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .link {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Frame 1 with links -->
+        <div class="frame1">
+            <a href="page1.html" class="link" target="content-frame">Page 1</a>
+            <a href="page2.html" class="link" target="content-frame">Page 2</a>
+            <a href="page3.html" class="link" target="content-frame">Page 3</a>
+        </div>
+
+        <!-- Frame 2 with content -->
+        <div class="frame2">
+            <iframe name="content-frame"></iframe>
+        </div>
+    </div>
+</body>
+</html>
